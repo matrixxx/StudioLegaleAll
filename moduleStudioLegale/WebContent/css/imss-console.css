@@ -1,0 +1,197 @@
+@CHARSET "UTF-8";
+
+p.header, p.footer {
+	align-self: center;
+	border-color: teal;
+	border-width: 1px;
+	font-family: serif;
+	font-size: large;
+}
+
+.ol-mouse-position {
+	right: 3em;
+	color: #fff;
+	background-color: rgbs(0, 60, 136, 5);
+	padding: 2px 10px;
+	border-radius: 4px;
+}
+
+.ol-scale-line {
+	left: 175px;
+}
+
+.ol-rotate {
+	top: 3em;
+}
+
+.ol-zoomslider {
+	width: 200px;
+	height: 20px;
+	left: 3em;
+	top: 0.5em;
+}
+
+.ol-zoomslider-thumb {
+	height: 16px;
+}
+
+div.container {
+	width: 98%;
+}
+
+div.outLog {
+	height: 90%;
+	font-size: small;
+	border-color: teal;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+div.tree {
+	overflow: auto;
+	padding: 2px; 
+}
+
+.panel-heading {
+	padding: 4px 4px 4px 4px;
+}
+
+.panel-title, div.tree, .ilabel {
+	font-size: smaller;
+}
+
+span.inp-text {
+	vertical-align: middle;
+	height: 22px;
+	font-size: smaller;
+}
+
+div.drawing {
+	max-width: 240px;
+}
+
+textarea.drawCoords {
+	width: 220px;
+	vertical-align: top;
+	font-size: small;
+	font-family: monospace;
+}
+
+.panel-body {
+	padding: 6px;
+}
+
+.panel-heading span {
+    margin-top: -16px;
+    padding: 0 10px;
+}
+.panel-primary, .panel-success {
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.mark-selected {
+    margin-top: -30px;
+    padding: 0 10px;
+}
+
+.backred {
+	background-color: red;
+}
+
+
+//-----
+
+.tree-div {
+	border: solid 1px;
+}
+
+.tree, .tree ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.tree ul {
+	margin-left: 1em; /* indentation */
+	position: relative;
+}
+
+.tree ul ul {
+	margin-left: .5em
+} /* (indentation/2) */
+
+.tree ul:before {
+	content: "";
+	display: block;
+	width: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid;
+}
+
+.tree li {
+	margin: 0;
+	padding: 0 1.5em; /* indentation + .5em */
+	line-height: 2em; /* default list item's `line-height` */
+	color: #369;
+	font-weight: normal;
+	font-size: small;
+	position: relative;
+}
+
+.tree ul li:before {
+	content: "";
+	display: block;
+	width: 10px; /* same with indentation */
+	height: 0;
+	border-top: 1px solid;
+	margin-top: -1px; /* border top width */
+	position: absolute;
+	top: 1em; /* (line-height/2) */
+	left: 0;
+}
+
+.tree ul li:last-child:before {
+	background: #f5f5f5; /* same with container background */
+	height: auto;
+	top: 1em; /* (line-height/2) */
+	bottom: 0;
+}
+
+.tree ul:hover {
+	cursor: default;
+}
+
+.tree li.group:hover {
+	cursor: pointer;
+}
+
+.tree li.selected {
+	color: red;
+	text-decoration: underline;
+}
+
+label.small {
+	font-weight: normal;
+}
+
+input.small {
+  vertical-align: middle;
+  height: 20px;
+}
+
+span.small {
+  display: inline;
+  font-weight: normal;
+  font-size: smaller;
+}
